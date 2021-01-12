@@ -1,27 +1,27 @@
 # htgo-tts
-[https://hegedustibor.github.io/htgo-tts/](https://hegedustibor.github.io/htgo-tts/)
+[https://github.com/MarlikAlmighty/htgo-tts/](https://github.com/MarlikAlmighty/htgo-tts/)
 
 ### Requirement:
 - mplayer (optional)
 
 ### Install
 ```
-go get "github.com/hegedustibor/htgo-tts"
+go get "github.com/MarlikAlmighty/htgo-tts"
 ```
 
 ### Update
 ```
-go get -u "github.com/hegedustibor/htgo-tts"
+go get -u "github.com/MarlikAlmighty/htgo-tts"
 ```
 
 ### Remove
 ```
-go clean -i "github.com/hegedustibor/htgo-tts"
+go clean -i "github.com/MarlikAlmighty/htgo-tts"
 ```
 
 ### Import
 ```go
-import "github.com/hegedustibor/htgo-tts"
+import "github.com/MarlikAlmighty/htgo-tts"
 ```
 
 ### Use
@@ -33,11 +33,10 @@ speech.Speak("Your sentence.")
 ### Use with Handlers
 ```go
 import (
-    htgotts "github.com/hegedustibor/htgo-tts"
-    handlers "github.com/hegedustibor/htgo-tts/handlers"
+    hs "ggithub.com/MarlikAlmighty/htgo-tts"
 )
 
-speech := htgotts.Speech{Folder: "audio", Language: "en", Handler: &handlers.MPlayer{}}
+speech := hs.Speech{Folder: "audio", Language: "en", Handler: &handlers.MPlayer{}}
 speech.Speak("Your sentence.")
 ```
 

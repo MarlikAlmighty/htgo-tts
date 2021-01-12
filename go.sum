@@ -1,0 +1,6 @@
+github.com/MarlikAlmighty/htgo-tts v0.0.0-20210112213714-c0eb9a65fcbf h1:IUxcNCufqmXT7JYgCS0SOSg0B5DHIFdeKIjCId+kjUI=
+github.com/MarlikAlmighty/htgo-tts v0.0.0-20210112213714-c0eb9a65fcbf/go.mod h1:OHAu9tBYWm3dPXrsKwC5rEZaoEer0hk0oCbhuCyi/s0=
+github.com/google/uuid v1.1.4 h1:0ecGp3skIrHWPNGPJDaBIghfA6Sp7Ruo2Io8eLKzWm0=
+github.com/google/uuid v1.1.4/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/hegedustibor/htgo-tts v0.0.0-20201020054059-2b0b3a7cc05a h1:+eKoXgID66ADqttZxaCqvV92AK1DRwpGb4Igr6/Sqko=
+github.com/hegedustibor/htgo-tts v0.0.0-20201020054059-2b0b3a7cc05a/go.mod h1:RMCXb2VPY7VmPHclIib3rBrcDTJuOUlVnQwp8iBJNTo=
