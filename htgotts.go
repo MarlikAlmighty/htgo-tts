@@ -2,11 +2,13 @@ package htgotts
 
 import (
 	"fmt"
-	"github.com/hegedustibor/htgo-tts/handlers"
+	"htgo-tts/handlers"
 	"io"
 	"net/http"
 	"net/url"
 	"os"
+
+	guuid "github.com/google/uuid"
 )
 
 /**
@@ -22,13 +24,18 @@ import (
 type Speech struct {
 	Folder   string
 	Language string
-	Handler handlers.PlayerInterface
+	Handler  handlers.PlayerInterface
 }
 
 // Speak downloads speech and plays it using mplayer
 func (speech *Speech) Speak(text string) error {
 
-	fileName := speech.Folder + "/" + text + ".mp3"
+	uuid := guuid.New()
+	if uuid.String() == "" {
+		return fmt.Errorf("filename is empty")
+	}
+
+	fileName := speech.Folder + "/" + uuid.String() + ".mp3"
 
 	var err error
 	if err = speech.createFolderIfNotExists(speech.Folder); err != nil {
