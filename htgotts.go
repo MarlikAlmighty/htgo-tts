@@ -2,11 +2,12 @@ package htgotts
 
 import (
 	"fmt"
-	"htgo-tts/handlers"
 	"io"
 	"net/http"
 	"net/url"
 	"os"
+
+	"github.com/MarlikAlmighty/htgo-tts/handlers"
 
 	guuid "github.com/google/uuid"
 )
